@@ -101,6 +101,18 @@ h3 {
   font-size: 41px;
   font-weight: 600; }
 
+h4 {
+  margin-bottom: 17px;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 600;
+  text-transform: capitalize; }
+
+p {
+  color: #7f8286;
+  font-size: 17px;
+  line-height: 1.4; }
+
 /*for wrapper*/
 .wrapper {
   max-width: 1286px;
@@ -180,5 +192,30 @@ h3 {
     position: absolute;
     bottom: 55px;
     left: 20%; }
+
+.explore-us {
+  margin-bottom: 70px; }
+  .explore-us .wrapper {
+    background-color: #f7910c; }
+  .explore-us .about-school {
+    width: 27%;
+    padding: 0 47px 0 114px;
+    display: inline-block;
+    vertical-align: middle; }
+  .explore-us .video {
+    width: 58.1%;
+    display: inline-block;
+    vertical-align: middle; }
+  .explore-us p {
+    margin-bottom: 35px;
+    color: #fff; }
+  .explore-us a {
+    padding: 8px 16px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize; }
+  .explore-us .modal {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */

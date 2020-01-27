@@ -1,0 +1,33 @@
+.explore-us {
+  margin-bottom: 70px;
+
+  .wrapper { background-color: $orange; }
+
+  .about-school {
+    width: 27%;
+    padding: 0 47px 0 114px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .video {
+    width: 58.1%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  p {
+    margin-bottom: 35px;
+    color: $white;
+  }
+
+  a {
+    padding: 8px 16px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  .modal { display: none; }
+}

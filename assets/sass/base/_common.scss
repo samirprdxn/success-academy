@@ -33,9 +33,22 @@ h1 {
 h3 {
   color: $white;
   font-size: 41px;
-  font-weight: 600;
+  font-weight: $bold;
 }
 
+h4 {
+  margin-bottom: 17px;
+  color: $white;
+  font-size: 33px;
+  font-weight: $bold;
+  text-transform: capitalize;
+}
+
+p {
+  color: $grey;
+  font-size: 17px;
+  line-height: 1.4;
+}
 /*for wrapper*/
 .wrapper {
   max-width: 1286px;
