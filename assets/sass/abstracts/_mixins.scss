@@ -1,0 +1,53 @@
+@mixin flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin align-items($align) {
+	-webkit-box-align: $align;
+	-ms-flex-align: $align;
+	align-items: $align;
+}
+
+@mixin flex-wrap($wrap) {
+	-ms-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+}
+
+@mixin justify-content($show-content) {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: $show-content;
+}
+
+@mixin flex-basis($width) {
+	-ms-flex-preferred-size: $width;
+	flex-basis: $width;
+}
+
+@mixin transition($seconds) {
+	-webkit-transition: $seconds;
+	-o-transition: $seconds;
+	transition: $seconds;
+}
+
+@mixin transform($translate) {
+	-webkit-transform: $translate;
+	-ms-transform: $translate; 
+	transform: $translate;
+}
+
+@mixin breakpoints($size) {
+	@if $size == tablet {
+		@media (max-width: $tablet-size) { @content; }
+	} @else if $size == phone {
+		@media (max-width: $phone-size) { @content; }
+	}
+}
+
+@mixin reverse-breakpoint($size) {
+	@if $size == desktop {
+		@media (min-width: $tablet-size) { @content; }
+	}
+}
