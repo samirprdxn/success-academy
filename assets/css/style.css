@@ -1,9 +1,7 @@
-@charset "utf-8";
 /* ==========================================================================
-   1. CSS Reset Code
+   CSS Reset Code
    ========================================================================== */
-
-/* 1.1. Eric Meyers Reset
+/* Eric Meyers Reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -20,135 +18,154 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll; }
 
 /* Align radios and text inputs with their label */
-
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom; }
 
 /* Hand cursor on clickable input elements */
 label,
 input[type='button'],
 input[type='submit'],
 button {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 strong {
   font-weight: bold;
   font-family: inherit;
-  font-size: inherit;
-}
+  font-size: inherit; }
 
-em { font-style: italic; }
+em {
+  font-style: italic; }
 
 img {
   width: 100%;
   border: 0;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 sub,
 sup {
   vertical-align: baseline;
   position: relative;
   font-size: 55%;
-  line-height: 0;
-}
+  line-height: 0; }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -.7em; }
 
-/* 1.2. Clear Fix
-   ========================== */
+sub {
+  bottom: -.25em; }
 
+/* clear fix */
 .cf:before,
 .cf:after {
   display: table;
-  content: " ";
-}
+  content: " "; }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
 
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
-}
+  text-decoration: none; }
 
 li {
   display: inline-block;
-  list-style-type: none;
-}
+  list-style-type: none; }
+
+h1 {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle; }
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
-  margin: 0 auto;
-}
-/*=================================
-  Header styling starts here
-=================================*/
+  max-width: 1286px;
+  width: 87%;
+  margin: 0 auto; }
 
+.header-top .wrapper {
+  padding: 3px 0;
+  background-color: #f7910c;
+  text-align: right; }
+.header-top .about-us {
+  display: inline-block; }
+  .header-top .about-us a {
+    padding: 0 20px 0 16px;
+    border-right: 1px solid;
+    color: #fff;
+    font-size: 10px;
+    text-transform: capitalize; }
+  .header-top .about-us .select {
+    padding: 0 28px 0 25px; }
+    .header-top .about-us .select_language {
+      display: none; }
+    .header-top .about-us .select:after {
+      content: '\f078';
+      padding-left: 8px;
+      font-family: FontAwesome;
+      font-size: 9px; }
+  .header-top .about-us .search_here {
+    display: none; }
+  .header-top .about-us .search_btn {
+    border: 0;
+    background: transparent;
+    text-indent: -9999px; }
+    .header-top .about-us .search_btn::after {
+      content: '\f002';
+      padding: 0px 19px 0 14px;
+      border-right: 1px solid;
+      float: right;
+      color: #fff;
+      font-family: FontAwesome;
+      font-size: 12px;
+      text-indent: 0; }
+.header-top .icons {
+  width: 12%;
+  margin: 0 1.6%;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .header-top .icons li {
+    width: 10%; }
+  .header-top .icons-facebook {
+    width: 44%; }
 
+.header-bottom .wrapper {
+  margin: 18px auto; }
 
+.nav {
+  margin-top: 24px;
+  float: right; }
+  .nav_list li {
+    padding: 0 34px; }
+  .nav_list a {
+    color: #f7910c;
+    font-size: 11px;
+    text-transform: uppercase; }
+  .nav .hamburger {
+    display: none; }
 
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
-  main styling starts here
-=================================*/
-
-
-
-
-
-
-
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+// header section styling start
+.header-top {
+
+  .wrapper {
+    padding: 3px 0;
+    background-color: $orange;
+    text-align: right;
+  }
+
+  .about-us {
+    display: inline-block;
+
+    a {
+      padding: 0 20px 0 16px;
+      border-right: 1px solid;
+      color: $white;
+      font-size: 10px;
+      text-transform: capitalize;
+    }
+  
+    .select {
+      padding: 0 28px 0 25px;
+
+      &_language { display: none; }
+  
+      &:after {
+        content: '\f078';
+        padding-left: 8px;
+        font-family: $font-awesome;
+        font-size: 9px;
+      }
+    }
+  
+    .search {
+      &_here { display: none; }
+  
+      &_btn {
+        border: 0;
+        background: transparent;
+        text-indent: -9999px;
+  
+        &::after {
+          content: '\f002';
+          padding: 0px 19px 0 14px;
+          border-right: 1px solid;
+          float: right;
+          color: $white;
+          font-family: $font-awesome;
+          font-size: 12px;
+          text-indent: 0;
+        }
+      }
+    }
+  }
+
+  .icons {
+    width: 12%;
+    margin: 0 1.6%;
+    display: inline-flex;
+    @include align-items(center);
+    @include justify-content(space-between);
+
+    li { width: 10%; }
+    &-facebook { width: 44%; }
+  }
+}
+
+.header-bottom {
+  .wrapper { margin: 18px auto; }
+}

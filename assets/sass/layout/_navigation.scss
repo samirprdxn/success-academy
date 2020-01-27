@@ -1,0 +1,16 @@
+.nav {
+  margin-top: 24px;
+  float: right;
+
+  &_list {
+    li { padding: 0 34px; }
+
+    a {
+      color: $orange;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+  }
+
+  .hamburger { display: none; }
+}

@@ -14,7 +14,7 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
   text-decoration: none; 
 }
@@ -24,9 +24,15 @@ li {
   list-style-type: none;
 }
 
+h1 {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1286px;
-  width: 85%;
+  width: 87%;
   margin: 0 auto;
 }
