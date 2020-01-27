@@ -96,6 +96,11 @@ h1 {
   display: inline-block;
   vertical-align: middle; }
 
+h3 {
+  color: #fff;
+  font-size: 41px;
+  font-weight: 600; }
+
 /*for wrapper*/
 .wrapper {
   max-width: 1286px;
@@ -167,5 +172,13 @@ h1 {
     text-transform: uppercase; }
   .nav .hamburger {
     display: none; }
+
+.banner {
+  margin-bottom: 70px;
+  position: relative; }
+  .banner h3 {
+    position: absolute;
+    bottom: 55px;
+    left: 20%; }
 
 /*# sourceMappingURL=style.css.map */
