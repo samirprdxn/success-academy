@@ -227,47 +227,69 @@ p {
   .explore-us .modal {
     display: none; }
 
-.success .wrapper {
-  position: relative; }
-.success-information {
-  width: 34%;
-  padding: 78px 5% 0 10.2%;
-  display: inline-block;
-  vertical-align: middle; }
-.success li {
-  position: relative; }
-  .success li::after {
-    content: '\f0d7';
-    position: absolute;
-    font-family: FontAwesome;
-    font-size: 67px; }
-.success_history h5 {
-  top: 0;
-  left: 0;
-  background-color: #1e5787; }
-.success_history::after {
-  top: 108px;
-  left: 23%;
-  color: #1e5787; }
-.success_literacy h5 {
-  top: 0;
-  right: 0;
-  background-color: #f7910c; }
-.success_literacy::after {
-  top: 150px;
-  right: 26%;
-  color: #f7910c; }
-.success_dance h5 {
-  bottom: 299px;
-  left: 0;
-  background-color: #399fda; }
-.success_dance::after {
-  top: 107px;
-  left: 23%;
-  color: #399fda; }
-.success figure {
-  width: 50.4%;
-  display: inline-block;
-  vertical-align: middle; }
+.success {
+  margin-bottom: 70px; }
+  .success .wrapper {
+    position: relative; }
+  .success-information {
+    width: 34%;
+    padding: 78px 5% 0 10.2%;
+    display: inline-block;
+    vertical-align: middle; }
+  .success li {
+    position: relative; }
+    .success li::after {
+      content: '\f0d7';
+      position: absolute;
+      font-family: FontAwesome;
+      font-size: 67px; }
+  .success_history h5 {
+    top: 0;
+    left: 0;
+    background-color: #1e5787; }
+  .success_history::after {
+    top: 108px;
+    left: 23%;
+    color: #1e5787; }
+  .success_literacy h5 {
+    top: 0;
+    right: 0;
+    background-color: #f7910c; }
+  .success_literacy::after {
+    top: 150px;
+    right: 26%;
+    color: #f7910c; }
+  .success_dance h5 {
+    bottom: 299px;
+    left: 0;
+    background-color: #399fda; }
+  .success_dance::after {
+    top: 107px;
+    left: 23%;
+    color: #399fda; }
+  .success figure {
+    width: 50.4%;
+    display: inline-block;
+    vertical-align: middle; }
+
+.admission {
+  margin-bottom: 70px;
+  text-align: center; }
+  .admission .wrapper {
+    padding: 58px 0;
+    background-color: #e5e5e5; }
+  .admission p::first-letter {
+    text-transform: capitalize; }
+  .admission p {
+    margin-bottom: 6px;
+    font-size: 25px;
+    font-weight: 600; }
+  .admission a {
+    padding: 9px 28px;
+    border-radius: 4px;
+    margin-left: .8%;
+    background-color: #f7910c;
+    color: #fff;
+    text-transform: capitalize; }
 
 /*# sourceMappingURL=style.css.map */
