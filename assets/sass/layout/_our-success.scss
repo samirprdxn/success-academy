@@ -1,0 +1,71 @@
+.success {
+  .wrapper {
+    position: relative;
+  }
+
+  &-information {
+    width: 34%;
+    padding: 78px 5% 0 10.2%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  li {
+    position: relative;
+
+    &::after {
+      content: '\f0d7';
+      position: absolute;
+      font-family: $font-awesome;
+      font-size: 67px;
+    }
+  }
+
+  &_history {
+    h5 {
+      top: 0;
+      left: 0;
+      background-color: $blue;
+    }
+
+    &::after {
+      top: 108px;
+      left: 23%;
+      color: $blue;
+    }
+  }
+
+  &_literacy {
+    h5 {
+      top: 0;
+      right: 0;
+      background-color: $orange;
+    }
+
+    &::after {
+      top: 150px;
+      right: 26%;
+      color: $orange;
+    }
+  }
+
+  &_dance {
+    h5 {
+      bottom: 299px;
+      left: 0;
+      background-color: $light-blue;
+    }
+
+    &::after {
+      top: 107px;
+      left: 23%;
+      color: $light-blue;
+    }
+  }
+
+  figure {
+    width: 50.4%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
