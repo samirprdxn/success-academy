@@ -23,6 +23,13 @@ footer {
     @extend %inline-block;
     @extend %border-right;
 
+    @include breakpoints(tablet) {
+      width: 100%;
+      padding: 30px 0;
+      border-top: 1px solid $orange;
+      border-right: 0;
+    }
+
     span {
       color: $grey;
       font-size: 11px;
@@ -42,6 +49,13 @@ footer {
     @extend %border-right;
     @extend %inline-block;
 
+    @include breakpoints(tablet) {
+      width: 100%;
+      padding: 30px 0;
+      border-top: 1px solid $orange;
+      border-right: 0;
+    }
+
     ul {
       @include flex(flex);
       @include flex-wrap(wrap);
@@ -50,6 +64,7 @@ footer {
       li {
         display: block;
         @include flex-basis(50%);
+        @include breakpoints(tablet) { @include flex-basis(100%); }
       }
     }
 
@@ -66,6 +81,13 @@ footer {
     padding: 0 64px 0 41px;
     @extend %inline-block;
 
+    @include breakpoints(tablet) {
+      width: 100%;
+      padding: 30px 0;
+      border-top: 1px solid $orange;
+      border-right: 0;
+    }
+
     h6 { width: 66%; }
 
     p {
@@ -80,12 +102,14 @@ footer {
       @include flex(flex);
       @include justify-content(space-evenly);
 
+      @include breakpoints(tablet) { width: 25%; }
+
       li {
         @include flex-basis(7%);
         @extend %opacity;
       }
       
-        &-facebook { width: 60%; }
+      &-facebook { width: 60%; }
     }
 
     .stay-connected {

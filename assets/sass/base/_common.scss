@@ -27,6 +27,8 @@ li {
 h1 {
   width: 10%;
   @extend %inline-block;
+
+  @include breakpoints(tablet) { width: 30%; }
 }
 
 h2 {
@@ -39,6 +41,8 @@ h3 {
   color: $white;
   font-size: 41px;
   font-weight: $bold;
+
+  @include breakpoints(phone) { font-size: 15px; }
 }
 
 h4 {
@@ -52,11 +56,16 @@ h4 {
 h5 {
   width: 65%;
   padding: 46px 0;
+  position: absolute;
   color: $white;
   font-size: 37px;
   text-align: center;
   text-transform: capitalize;
-  position: absolute;
+
+  @include breakpoints(phone) {
+    padding: 20px 0;  
+    font-size: 17px;
+  }
 }
 
 h6 {
