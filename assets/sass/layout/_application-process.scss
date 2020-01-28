@@ -1,8 +1,3 @@
-%inline-block {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .application-process {
 
   h3 {
@@ -12,11 +7,11 @@
   }
 
   .tabs-container {
-    @include flex();
+    @include flex(flex);
     @include justify-content(space-between);
 
     li {
-          
+      
       .tab {
         padding: 23px 92.5px;
         background-color: $light-blue;
@@ -105,6 +100,18 @@
     background-color: $light-blue;
 
     p { color: $white; }
-    a { background-color: $blue; }
+
+    a {
+      background-color: $blue;
+    
+      &:hover {
+        @include reverse-breakpoint(desktop) {
+          background-color: $white;
+          color: $blue;
+        }
+        
+        @include transition(.8s ease-in-out);
+      }
+    }
   }
 }

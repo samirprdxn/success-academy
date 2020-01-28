@@ -1,0 +1,106 @@
+%border-right {
+  border-right: 1px solid $orange;
+}
+
+%hover {
+  &:hover {
+    @include reverse-breakpoint(desktop) { color: $orange; }
+    @include transition(.5s ease-in-out);
+  }
+}
+
+footer {
+  .wrapper {
+    padding: 16px 0 38px;
+    border-top: 1px solid $orange;
+  }
+
+  h2 { vertical-align: top; }
+
+  .reach-us {
+    width: 11%;
+    padding: 0 51px 0 95px;
+    @extend %inline-block;
+    @extend %border-right;
+
+    span {
+      color: $grey;
+      font-size: 11px;
+      text-transform: capitalize;
+
+      a {
+        margin-left: 2px;
+        color: $grey;
+        @extend %hover;
+      }
+    }
+  }
+
+  .quick-links {
+    width: 19.5%;
+    padding: 0 33px 0 20px;
+    @extend %border-right;
+    @extend %inline-block;
+
+    ul {
+      @include flex(flex);
+      @include flex-wrap(wrap);
+      @include justify-content(space-between);
+
+      li {
+        display: block;
+        @include flex-basis(50%);
+      }
+    }
+
+    a {
+      color: $grey;
+      font-size: 11px;
+      text-transform: capitalize;
+      @extend %hover;
+    }
+  }
+
+  .connect-us {
+    width: 14%;
+    padding: 0 64px 0 41px;
+    @extend %inline-block;
+
+    h6 { width: 66%; }
+
+    p {
+      margin-bottom: 6px;
+      font-size: 11px;
+
+      &::first-letter { text-transform: capitalize; }
+    }
+
+    .social_icons {
+      margin-bottom: 6px;
+      @include flex(flex);
+      @include justify-content(space-evenly);
+
+      li {
+        @include flex-basis(7%);
+        @extend %opacity;
+      }
+      
+        &-facebook { width: 60%; }
+    }
+
+    .stay-connected {
+      color: $blue;
+      font-size: 10px;
+      font-weight: $bold;
+      text-transform: capitalize;
+      @extend %hover;
+
+      &::after {
+        content: '\f054';
+        padding-left: 4px;
+        font-family: $font-awesome;
+        font-size: 8px;
+      }
+    }
+  }
+}

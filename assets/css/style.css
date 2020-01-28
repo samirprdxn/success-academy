@@ -92,9 +92,11 @@ li {
   list-style-type: none; }
 
 h1 {
-  width: 10%;
-  display: inline-block;
-  vertical-align: middle; }
+  width: 10%; }
+
+h2 {
+  width: 6.7%;
+  margin-right: 18%; }
 
 h3 {
   color: #fff;
@@ -117,9 +119,22 @@ h5 {
   text-transform: capitalize;
   position: absolute; }
 
+h6 {
+  margin-bottom: 13px;
+  color: #f7910c;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize; }
+
 p {
   color: #7f8286;
   font-size: 17px;
+  line-height: 1.4; }
+
+address {
+  color: #7f8286;
+  font-size: 11px;
+  text-transform: capitalize;
   line-height: 1.4; }
 
 /*for wrapper*/
@@ -127,6 +142,18 @@ p {
   max-width: 1286px;
   width: 87%;
   margin: 0 auto; }
+
+h1, h2, .application-process .content-container .tab-content .eligibility, .application-process .content-container .tab-content figure, footer .reach-us, footer .quick-links, footer .connect-us {
+  display: inline-block;
+  vertical-align: middle; }
+
+.header-top .about-us .search_btn:hover, .header-top .icons li:hover, footer .connect-us .social_icons li:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  @media (min-width: 995px) {
+    .header-top .about-us .search_btn:hover, .header-top .icons li:hover, footer .connect-us .social_icons li:hover {
+      opacity: .6; } }
 
 .header-top .wrapper {
   padding: 3px 0;
@@ -140,6 +167,13 @@ p {
     color: #fff;
     font-size: 10px;
     text-transform: capitalize; }
+    .header-top .about-us a:hover {
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+      @media (min-width: 995px) {
+        .header-top .about-us a:hover {
+          color: #000; } }
   .header-top .about-us .select {
     padding: 0 28px 0 25px; }
     .header-top .about-us .select_language {
@@ -191,6 +225,13 @@ p {
     color: #f7910c;
     font-size: 11px;
     text-transform: uppercase; }
+    .nav_list a:hover {
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+      @media (min-width: 995px) {
+        .nav_list a:hover {
+          color: #000; } }
   .nav .hamburger {
     display: none; }
 
@@ -224,6 +265,14 @@ p {
     border-radius: 5px;
     color: #fff;
     text-transform: capitalize; }
+    .explore-us a:hover {
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+      @media (min-width: 995px) {
+        .explore-us a:hover {
+          background-color: #fff;
+          color: #f7910c; } }
   .explore-us .modal {
     display: none; }
 
@@ -291,6 +340,14 @@ p {
     background-color: #f7910c;
     color: #fff;
     text-transform: capitalize; }
+    .admission a:hover {
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+      @media (min-width: 995px) {
+        .admission a:hover {
+          background-color: #fff;
+          color: #f7910c; } }
 
 .feedback {
   margin-bottom: 70px; }
@@ -344,10 +401,6 @@ p {
       .feedback .slider .slick-next::before {
         content: '\f054';
         font-family: FontAwesome; }
-
-.application-process .content-container .tab-content .eligibility, .application-process .content-container .tab-content figure {
-  display: inline-block;
-  vertical-align: middle; }
 
 .application-process h3 {
   padding: 44px 0;
@@ -419,5 +472,93 @@ p {
     color: #fff; }
   .application-process .admission a {
     background-color: #1e5787; }
+    .application-process .admission a:hover {
+      -webkit-transition: 0.8s ease-in-out;
+      -o-transition: 0.8s ease-in-out;
+      transition: 0.8s ease-in-out; }
+      @media (min-width: 995px) {
+        .application-process .admission a:hover {
+          background-color: #fff;
+          color: #1e5787; } }
+
+footer .reach-us, footer .quick-links {
+  border-right: 1px solid #f7910c; }
+
+footer .reach-us span a:hover, footer .quick-links a:hover, footer .connect-us .stay-connected:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  @media (min-width: 995px) {
+    footer .reach-us span a:hover, footer .quick-links a:hover, footer .connect-us .stay-connected:hover {
+      color: #f7910c; } }
+
+footer .wrapper {
+  padding: 16px 0 38px;
+  border-top: 1px solid #f7910c; }
+footer h2 {
+  vertical-align: top; }
+footer .reach-us {
+  width: 11%;
+  padding: 0 51px 0 95px; }
+  footer .reach-us span {
+    color: #7f8286;
+    font-size: 11px;
+    text-transform: capitalize; }
+    footer .reach-us span a {
+      margin-left: 2px;
+      color: #7f8286; }
+footer .quick-links {
+  width: 19.5%;
+  padding: 0 33px 0 20px; }
+  footer .quick-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .quick-links ul li {
+      display: block;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+  footer .quick-links a {
+    color: #7f8286;
+    font-size: 11px;
+    text-transform: capitalize; }
+footer .connect-us {
+  width: 14%;
+  padding: 0 64px 0 41px; }
+  footer .connect-us h6 {
+    width: 66%; }
+  footer .connect-us p {
+    margin-bottom: 6px;
+    font-size: 11px; }
+    footer .connect-us p::first-letter {
+      text-transform: capitalize; }
+  footer .connect-us .social_icons {
+    margin-bottom: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly; }
+    footer .connect-us .social_icons li {
+      -ms-flex-preferred-size: 7%;
+      flex-basis: 7%; }
+    footer .connect-us .social_icons-facebook {
+      width: 60%; }
+  footer .connect-us .stay-connected {
+    color: #1e5787;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: capitalize; }
+    footer .connect-us .stay-connected::after {
+      content: '\f054';
+      padding-left: 4px;
+      font-family: FontAwesome;
+      font-size: 8px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,8 +26,13 @@ li {
 
 h1 {
   width: 10%;
-  display: inline-block;
-  vertical-align: middle;
+  @extend %inline-block;
+}
+
+h2 {
+  width: 6.7%;
+  margin-right: 18%;
+  @extend %inline-block;
 }
 
 h3 {
@@ -54,9 +59,24 @@ h5 {
   position: absolute;
 }
 
+h6 {
+  margin-bottom: 13px;
+  color: $orange;
+  font-size: 11px;
+  font-weight: $bold;
+  text-transform: capitalize;
+}
+
 p {
   color: $grey;
   font-size: 17px;
+  line-height: 1.4;
+}
+
+address {
+  color: $grey;
+  font-size: 11px;
+  text-transform: capitalize;
   line-height: 1.4;
 }
 /*for wrapper*/
@@ -64,4 +84,16 @@ p {
   max-width: 1286px;
   width: 87%;
   margin: 0 auto;
+}
+
+%inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%opacity {
+  &:hover {
+    @include reverse-breakpoint(desktop) { opacity: .6; }
+    @include transition(.5s ease-in-out);
+  }
 }

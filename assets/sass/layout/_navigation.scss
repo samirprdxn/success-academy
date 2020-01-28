@@ -9,6 +9,11 @@
       color: $orange;
       font-size: 11px;
       text-transform: uppercase;
+      
+      &:hover {
+        @include reverse-breakpoint(desktop) { color: $black; }
+        @include transition(.5s ease-in-out);
+      }
     }
   }
 

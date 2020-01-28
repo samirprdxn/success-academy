@@ -16,6 +16,11 @@
       color: $white;
       font-size: 10px;
       text-transform: capitalize;
+
+      &:hover {
+        @include reverse-breakpoint(desktop) { color: $black; }
+        @include transition(.5s ease-in-out);
+      }
     }
   
     .select {
@@ -38,6 +43,7 @@
         border: 0;
         background: transparent;
         text-indent: -9999px;
+        @extend %opacity;
   
         &::after {
           content: '\f002';
@@ -60,7 +66,11 @@
     @include align-items(center);
     @include justify-content(space-between);
 
-    li { width: 10%; }
+    li {
+      width: 10%;
+      @extend %opacity;
+    }
+
     &-facebook { width: 44%; }
   }
 }

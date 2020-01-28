@@ -24,5 +24,14 @@
     background-color: $orange;
     color: $white;
     text-transform: capitalize;
+    
+    &:hover {
+      @include reverse-breakpoint(desktop) {
+        background-color: $white;
+        color: $orange;
+      }
+      
+      @include transition(.5s ease-in-out);
+    }
   }
 }
