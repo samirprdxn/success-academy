@@ -1,0 +1,133 @@
+%tablet-heading {
+  @include breakpoints(tablet) {
+    bottom: 60px;
+    left: 50%;
+  }
+}
+
+%heading-position {
+  @include breakpoints(tablet) {
+    width: 100%;
+    bottom: 100px;
+  }
+
+
+  @include breakpoints(phone) { bottom: 150px; }
+}
+
+.success {
+  margin-bottom: 70px;
+  
+  .wrapper { position: relative; }
+
+  figure {
+    width: 50.4%;
+    display: inline-block;
+    vertical-align: middle;
+
+    @include breakpoints(tablet) { width: 100%; }
+  }
+  
+  li {
+    position: relative;
+
+    @include breakpoints(tablet) {
+      @include flex(flex);
+      @include flex-wrap(wrap);
+    }
+
+    &::after {
+      content: '\f0d7';
+      position: absolute;
+      font-family: $font-awesome;
+      font-size: 67px;
+    }
+  }
+
+  &-information {
+    width: 34%;
+    padding: 78px 5% 0 10.2%;
+    display: inline-block;
+    vertical-align: middle;
+    order: 1;
+
+    @include breakpoints(tablet) {
+      width: 100%;
+      padding: 30px 0;
+      text-align: center;
+    }
+  }
+
+  &_history {
+    h5 {
+      background-color: $blue;
+      @extend %heading-position;
+
+      @include reverse-breakpoint(desktop) {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &::after {
+      color: $blue;
+      @extend %tablet-heading;
+
+      @include reverse-breakpoint(desktop) {
+        top: 108px;
+        left: 23%;
+      }
+
+      @include breakpoints(phone) { display: none; }
+    }
+  }
+
+  &_literacy {
+    h5 {
+      background-color: $orange;
+      @extend %heading-position;
+    
+      @include reverse-breakpoint(desktop) {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &::after {
+      right: 26%;
+      color: $orange;
+      @extend %tablet-heading;
+
+      @include reverse-breakpoint(desktop) {
+        top: 150px;
+        right: 26%;
+      }
+
+      @include breakpoints(phone) { display: none; }
+    }
+  }
+
+  &_dance {
+    h5 {
+      background-color: $light-blue;
+      @extend %heading-position;
+    
+      @include reverse-breakpoint(desktop) {
+        bottom: 299px;
+        left: 0;
+      }
+    }
+
+    &::after {
+      color: $light-blue;   
+      @extend %tablet-heading;
+
+      @include reverse-breakpoint(desktop) {
+        top: 107px;
+        left: 23%;
+      }
+
+      @include breakpoints(phone) { display: none; }
+    }
+  }
+}

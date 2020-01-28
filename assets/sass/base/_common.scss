@@ -14,7 +14,7 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
   text-decoration: none; 
 }
@@ -24,9 +24,85 @@ li {
   list-style-type: none;
 }
 
+h1 {
+  width: 10%;
+  @extend %inline-block;
+
+  @include breakpoints(tablet) { width: 30%; }
+}
+
+h2 {
+  width: 6.7%;
+  margin-right: 18%;
+  @extend %inline-block;
+}
+
+h3 {
+  color: $white;
+  font-size: 41px;
+  font-weight: $bold;
+
+  @include breakpoints(phone) { font-size: 15px; }
+}
+
+h4 {
+  margin-bottom: 17px;
+  color: $white;
+  font-size: 33px;
+  font-weight: $bold;
+  text-transform: capitalize;
+}
+
+h5 {
+  width: 65%;
+  padding: 46px 0;
+  position: absolute;
+  color: $white;
+  font-size: 37px;
+  text-align: center;
+  text-transform: capitalize;
+
+  @include breakpoints(phone) {
+    padding: 20px 0;  
+    font-size: 17px;
+  }
+}
+
+h6 {
+  margin-bottom: 13px;
+  color: $orange;
+  font-size: 11px;
+  font-weight: $bold;
+  text-transform: capitalize;
+}
+
+p {
+  color: $grey;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+address {
+  color: $grey;
+  font-size: 11px;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
 /*for wrapper*/
 .wrapper {
   max-width: 1286px;
-  width: 85%;
+  width: 87%;
   margin: 0 auto;
+}
+
+%inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%opacity {
+  &:hover {
+    @include reverse-breakpoint(desktop) { opacity: .6; }
+    @include transition(.5s ease-in-out);
+  }
 }
