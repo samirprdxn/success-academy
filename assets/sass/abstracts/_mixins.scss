@@ -1,7 +1,7 @@
-@mixin flex {
+@mixin flex($flex) {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	display: $flex;
 }
 
 @mixin align-items($align) {

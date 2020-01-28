@@ -1,0 +1,38 @@
+.admission {
+  margin-bottom: 70px;
+  text-align: center;
+
+  .wrapper {
+    padding: 58px 0;
+    background-color: $light-grey;
+  }
+
+  p {
+    &::first-letter { text-transform: capitalize; }
+  }
+  
+  p {
+    margin-bottom: 6px;
+    font-size: 25px;
+    font-weight: $bold;
+  }
+
+  a {
+    padding: 9px 28px;
+    border-radius: 4px;
+    margin-left: .8%;
+    background-color: $orange;
+    color: $white;
+    text-transform: capitalize;
+
+    @include breakpoints(phone) { padding: 9px 14px; }
+    
+    &:hover {
+      @include reverse-breakpoint(desktop) {
+        background-color: $white;
+        color: $orange;
+      }
+      @include transition(.5s ease-in-out);
+    }
+  }
+}

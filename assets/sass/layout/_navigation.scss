@@ -1,0 +1,90 @@
+.nav {
+  margin-top: 24px;
+  float: right;
+
+  @include breakpoints(tablet) {
+    width: 45px;
+    height: 45px;
+		display: inline-block;
+    position: static;
+  }
+
+  &_list {
+    @include breakpoints(tablet) {
+      width: 100%;
+			margin-left: 0;
+			display: none;
+			position: absolute;
+			top: 65px;
+			right: 0;
+			left: 0;
+			z-index: 3;
+    }
+
+    li {
+      padding: 0 34px;
+    
+      @include breakpoints(tablet) {
+        width: 100%;
+        padding: 15px 0;
+        border: 1px solid $white;
+        border-left: 0;
+        border-right: 0;
+        display: block;
+        background-color: $orange;
+        text-align: center;
+      }
+    }
+
+    a {
+      color: $orange;
+      font-size: 11px;
+      text-transform: uppercase;
+
+      @include breakpoints(tablet) { color: $white; }
+      
+      &:hover {
+        @include reverse-breakpoint(desktop) { color: $black; }
+        @include transition(.5s ease-in-out);
+      }
+    }
+  }
+
+  .hamburger {
+    @include reverse-breakpoint(desktop) { display: none; }
+    
+        
+    .ham1 {
+      margin-bottom: 0;
+      @include transform(translateY(3px) rotate(-45deg));
+      @include transition(.5s ease-in-out);
+    }
+    
+    .ham3 {
+      margin-bottom: 0;
+      @include transform(translateY(0) rotate(45deg));
+      @include transition(.5s ease-in-out);
+    }
+    
+    .ham2 {
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0); 
+      transform: scale(0);
+    }
+
+    span {
+      width: 70%;
+      height: 3px;
+      border-radius: 20px;
+      margin-bottom: 7px;
+      display: block;
+      background-color: $grey;
+      text-indent: -9999px;
+    }
+  }
+
+  .block {
+    display: block;
+    @include transition(.5s ease-in-out);
+  }
+}

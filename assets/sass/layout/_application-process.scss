@@ -1,0 +1,130 @@
+.application-process {
+  h3 {
+    padding: 44px 0;
+    background: $light-blue;
+    text-align: center;
+  }
+
+  .tabs-container {
+    @include flex(flex);
+    @include justify-content(space-between);
+    
+    @include breakpoints(tablet) {
+      @include justify-content(center);
+    }
+
+    li {
+      .tab {
+        padding: 23px 92.5px;
+        background-color: $light-blue;
+        color: $white;
+        font-size: 11px;
+        font-weight: $bold;
+        text-transform: uppercase;
+
+        @include breakpoints(tablet) { display: none; }
+      }
+
+      .active {
+        background-color: $blue;
+        
+        @include breakpoints(tablet) { display: block; }
+      }
+    }
+  }
+  .content-container {
+    background-color: $light-grey;
+    
+    .tab-content {
+      display: none;
+
+      p {
+        margin-bottom: 20px;
+        color: $dark-grey;
+        font-size: 20px;
+      }
+    
+      .eligibility {
+        width: 48%;
+        margin-left: 7%;
+        @extend %inline-block;
+
+        @include breakpoints(tablet) {
+          width: 100%;
+          margin: 30px 0;
+        }
+
+        &_check {
+          margin-bottom: 27px;
+          color: $orange;
+          font-size: 20px;      
+          text-transform: uppercase;
+        }
+
+        &_criteria {
+          span {
+            margin-bottom: 15px;
+            display: block;
+            color: $grey;
+            font-size: 17px;
+            line-height: 1.2;
+
+            &::before {
+              content: '\f111';
+              padding-right: 8px;
+              color: $orange;
+              font-family: $font-awesome;
+              font-size: 6px;
+            }
+          }
+        }
+
+        ul {
+          li { display: block; }
+
+          p {
+            text-transform: capitalize;
+            letter-spacing: 1px;
+
+            span {
+              margin-left: 3px;
+              font-size: 18px;
+              color: $grey;
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+
+      figure {
+        width: 34.6%;
+        margin-left: 10%;
+        @extend %inline-block;
+
+        @include breakpoints(tablet) { display: none; }
+      }
+    }
+
+    .active-content { display: block; }  
+  }
+
+  .admission {
+    padding: 58px 0;
+    background-color: $light-blue;
+
+    p { color: $white; }
+
+    a {
+      background-color: $blue;
+    
+      &:hover {
+        @include reverse-breakpoint(desktop) {
+          background-color: $white;
+          color: $blue;
+        }
+        
+        @include transition(.8s ease-in-out);
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.banner {
+  margin-bottom: 70px;
+  position: relative;
+
+  h3 {
+    position: absolute;
+    bottom: 55px;
+    left: 20%;
+
+    @include breakpoints(tablet) {
+      left: 50%;
+      text-align: center;
+      @include transform(translate(-50%));
+    }
+  }
+}

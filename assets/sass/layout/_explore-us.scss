@@ -1,0 +1,56 @@
+.explore-us {
+  margin-bottom: 70px;
+
+  .wrapper {
+    background-color: $orange;
+  
+    @include breakpoints(tablet) {
+      @include flex(flex);
+      @include flex-wrap(wrap);
+    }
+  }
+
+  .about-school {
+    width: 27%;
+    padding: 0 47px 0 114px;
+    @extend %inline-block;
+
+    @include breakpoints(tablet) {
+      order: 1;
+      width: 100%;
+      padding: 30px 0;
+      text-align: center;
+    }
+  }
+
+  .video {
+    width: 58.1%;
+    @extend %inline-block;
+
+    @include breakpoints(tablet) { width: 100%; }
+  }
+
+  p {
+    margin-bottom: 35px;
+    color: $white;
+  }
+
+  a {
+    padding: 8px 16px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: $white;
+    text-transform: capitalize;
+    
+    &:hover {
+      @include reverse-breakpoint(desktop) {
+        background-color: $white;
+        color: $orange;
+      }
+      
+      @include transition(.5s ease-in-out);
+    }
+  }
+
+  .modal { display: none; }
+}
